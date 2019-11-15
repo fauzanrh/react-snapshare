@@ -1,5 +1,7 @@
 # react-snapshare
 
+![react snapshare logo](logo.jpeg)
+
 > Snapchat share button
 
 [![NPM](https://img.shields.io/npm/v/react-snapshare.svg)](https://www.npmjs.com/package/react-snapshare) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
@@ -25,6 +27,12 @@ To start using Creative Kit Web you will need to complete the following steps on
 npm install --save react-snapshare
 ```
 
+or
+
+```bash
+yarn add react-snapshare
+```
+
 ## Usage
 
 ### Default Snapshare Button
@@ -35,7 +43,12 @@ import Snapshare from "react-snapshare";
 
 class Example extends Component {
   render() {
-    return <Snapshare />;
+    return (
+      <Snapshare
+        dataShareUrl="https://twang.dev/react-snapshare/"
+        stickerAssetURL="https://kit.snapchat.com/ckweb/test/image.png"
+      />
+    );
   }
 }
 ```
@@ -56,6 +69,7 @@ class Example extends Component {
       <SnapshareCustom
         customButtonStyles={{ background: "yellow" }}
         customButtonClass="snapchat-button"
+        dataShareUrl="https://twang.dev/react-snapshare/"
       />
     );
   }
