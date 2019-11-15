@@ -7,7 +7,7 @@ export default class App extends Component {
     return (
       <div>
         <Snapshare />
-        <SnapshareCustom />
+        <SnapshareCustom customButtonStyles={{ background: "yellow" }} />
       </div>
     );
   }

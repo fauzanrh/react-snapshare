@@ -55,8 +55,10 @@
     "rollup-plugin-postcss": "^1.6.2",
     "rollup-plugin-url": "^1.4.0"
   },
+  "typings": "src/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "dependencies": {
     "react-helmet": "^5.2.1"

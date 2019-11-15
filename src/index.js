@@ -74,9 +74,6 @@ class SnapshareCustom extends React.Component {
       customButtonStyles,
       customButtonClass,
       dataShareUrl,
-      dataTheme,
-      dataSize,
-      dataText,
       siteName,
       sitetitle,
       stickerAssetURL,
@@ -96,9 +93,6 @@ class SnapshareCustom extends React.Component {
           style={customButtonStyles}
           className={'snapchat-share-button' + customButtonClass}
           data-share-url={dataShareUrl}
-          data-theme={dataTheme}
-          data-size={dataSize}
-          data-text={dataText}
         >
           Share on Snapchat
         </button>
@@ -133,9 +127,6 @@ SnapshareCustom.propTypes = {
   customButtonStyles: PropTypes.object,
   customButtonClass: PropTypes.string,
   dataShareUrl: PropTypes.string,
-  dataTheme: PropTypes.string,
-  dataSize: PropTypes.string,
-  dataText: PropTypes.string,
   siteName: PropTypes.string,
   sitetitle: PropTypes.string,
   stickerAssetURL: PropTypes.string,
@@ -146,9 +137,6 @@ SnapshareCustom.defaultProps = {
   customButtonStyles: {},
   customButtonClass: '',
   dataShareUrl: 'https://kit.snapchat.com/',
-  dataTheme: 'light',
-  dataSize: 'large',
-  dataText: 'true',
   siteName: 'Snapchat',
   sitetitle: 'The Fastest Way to Share a Moment!',
   stickerAssetURL: 'https://kit.snapchat.com/ckweb/test/image.png',

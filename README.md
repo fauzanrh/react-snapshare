@@ -27,6 +27,8 @@ npm install --save react-snapshare
 
 ## Usage
 
+### Default Snapshare Button
+
 ```jsx
 import React, { Component } from "react";
 import Snapshare from "react-snapshare";
@@ -38,17 +40,37 @@ class Example extends Component {
 }
 ```
 
+or
+
+### Custom Snapshare Button
+
+Use your own styles
+
+```jsx
+import React, { Component } from "react";
+import Snapshare from "react-snapshare";
+
+class Example extends Component {
+  render() {
+    return (
+      <SnapshareCustom
+        customButtonStyles={{ background: "yellow" }}
+        customButtonClass="snapchat-button"
+      />
+    );
+  }
+}
+```
+
 ## Props
 
-1. dataShareUrl: PropTypes.string
+### Common Props
 
-2. dataTheme: PropTypes.string
+#### dataShareUrl (string)
 
-3. dataSize: PropTypes.string
+The URL of the attachment to be shared. If not provided, this will default to the address of the page hosting the button (i.e. window.location.href)
 
-4. dataText: PropTypes.string
-
-5. stickerAssetURL: PropTypes.string
+#### stickerAssetURL (string)
 
 1000 x 1000px
 Transparent background
@@ -56,9 +78,33 @@ Less than 1MB
 PNG format
 Animated stickers in GIF format are supported only on iOS. On Android please use WebP.
 
-6. publisherID: PropTypes.string
+#### publisherID (string)
 
 In order to link the Creative Kit Share back to yourself as a Discover Publisher, you can add an additional meta tag to the html. First, obtain your publisher ID from [Story Studio](https://publish.snapchat.com/).
+
+### Default Snapshare Button
+
+#### dataTheme (string)
+
+light/dark. The share button supports two themes - light and dark. By default, the button uses the light theme. In order to use the dark theme, simply set data-theme=”dark” on the div.
+
+#### dataSize (string)
+
+small/large. The share button supports two sizes - a 'small' size (66x20), and a 'large' size (90x28). By default, the button uses the large size. In order to use the small size, simply set data-size=”small” on the div.
+
+#### dataText (string)
+
+The share button includes our Ghost logo, and a 'Snapchat' label by default. If you would like to hide the text and only show the logo, you can set data-text="false" on the div. This will change the size of the button to 28x28 and 20x20 for the large and small sizes respectively.
+
+### Custom Snapshare Button
+
+#### customButtonStyles (object)
+
+Inline styles for your custom button. Format as [React inline styles](https://reactjs.org/docs/dom-elements.html#style).
+
+#### customButtonClass (string)
+
+CSS class you can apply to your button.
 
 ## Behavior of the Share Button
 
