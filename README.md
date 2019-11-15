@@ -6,6 +6,8 @@
 
 [![NPM](https://img.shields.io/npm/v/react-snapshare.svg)](https://www.npmjs.com/package/react-snapshare) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+![gif demo](./gif.gif)
+
 ## Requirements
 
 - An app created on the [Snap Kit developer portal](https://kit.snapchat.com/portal)
