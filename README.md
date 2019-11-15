@@ -1,4 +1,4 @@
-# react-snapshare
+# React Snapshare
 
 ![react snapshare logo](logo.jpeg)
 
@@ -41,7 +41,7 @@ yarn add react-snapshare
 
 ```jsx
 import React, { Component } from "react";
-import Snapshare from "react-snapshare";
+import { Snapshare } from "react-snapshare";
 
 class Example extends Component {
   render() {
@@ -63,7 +63,7 @@ Use your own styles
 
 ```jsx
 import React, { Component } from "react";
-import Snapshare from "react-snapshare";
+import { SnapshareCustom } from "react-snapshare";
 
 class Example extends Component {
   render() {
