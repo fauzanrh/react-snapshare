@@ -129,7 +129,3 @@ CSS class you can apply to your button.
 - On Mobile Web - If a user on a mobile device taps on the Snapchat share button, one of two things will happen:
   1. Snapchat app installed - the user will be deep linked into the Snapchat app, and be presented with a modal containing information about the page. This information is pulled from OG tags - og:title, and og:site_name. The modal will also contain prompts to attach the URL to a Snap, or send the URL via chat.
   2. Snapchat app not installed - the user will be prompted to open the App/Play Store to get the Snapchat app.
-
-## License
-
-MIT © [thomaswangio](https://github.com/thomaswangio)
