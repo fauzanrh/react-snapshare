@@ -1,6 +1,6 @@
-# React Snapshare
-
 ![react snapshare logo](logo.jpeg)
+
+# React Snapshare
 
 > Snapchat share button
 
